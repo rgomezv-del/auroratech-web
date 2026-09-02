@@ -26,8 +26,8 @@ html {
 
 body {
     font-family: var(--font-body);
-    color: var(--text);
-    background: var(--light);
+    color: #1F2937;
+    background: #F8FAFC;
     line-height: 1.6;
     transition: background 0.3s ease, color 0.3s ease;
 }
@@ -64,7 +64,7 @@ nav {
 }
 
 .logo span {
-    color: var(--secondary);
+    color: #EC4899;
 }
 
 .nav-links {
@@ -89,7 +89,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--secondary);
+    background: #EC4899;
     transition: width 0.3s ease;
 }
 
@@ -98,7 +98,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: var(--secondary);
+    color: #EC4899;
 }
 
 .menu-toggle {
@@ -136,7 +136,7 @@ nav {
 }
 
 /* ========================================
-   HERO SECTION
+   HERO SECTION - COLORES FUERTES
    ======================================== */
 #hero {
     min-height: 100vh;
@@ -165,7 +165,7 @@ nav {
 }
 
 .hero-content h1 span {
-    background: linear-gradient(135deg, var(--secondary), #F59E0B);
+    background: linear-gradient(135deg, #EC4899, #F59E0B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -175,14 +175,13 @@ nav {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #FFFFFF;
-    opacity: 1;
     max-width: 500px;
 }
 
 .btn-primary {
     display: inline-block;
     padding: 1rem 2.5rem;
-    background: var(--secondary);
+    background: #EC4899;
     color: #FFFFFF;
     text-decoration: none;
     border-radius: 50px;
@@ -217,7 +216,7 @@ nav {
 }
 
 /* ========================================
-   SECCIÓN SERVICIOS
+   SECCIÓN SERVICIOS - CONTRASTE ALTO
    ======================================== */
 .section {
     padding: 5rem 2rem;
@@ -233,20 +232,19 @@ nav {
 .section-header h2 {
     font-family: var(--font-heading);
     font-size: 2.8rem;
-    color: var(--dark);
+    color: #1E1B4B;
     transition: color 0.3s ease;
 }
 
 .section-header h2 span {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, #7C3AED, #EC4899);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .section-header p {
-    color: var(--text);
-    opacity: 1;
+    color: #1F2937;
     font-size: 1.1rem;
     margin-top: 0.5rem;
     transition: color 0.3s ease;
@@ -271,7 +269,7 @@ nav {
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 60px rgba(124, 58, 237, 0.15);
-    border-color: var(--primary);
+    border-color: #7C3AED;
 }
 
 .service-icon {
@@ -283,24 +281,23 @@ nav {
     font-family: var(--font-heading);
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
-    color: var(--dark);
+    color: #1E1B4B;
     transition: color 0.3s ease;
 }
 
 .service-card p {
     color: #1F2937;
-    opacity: 1;
     font-size: 0.95rem;
     transition: color 0.3s ease;
 }
 
 /* ========================================
-   FOOTER
+   FOOTER - CONTRASTE ALTO
    ======================================== */
 footer {
     text-align: center;
     padding: 2.5rem;
-    background: var(--dark);
+    background: #1E1B4B;
     color: #FFFFFF;
     border-top: 2px solid rgba(124, 58, 237, 0.2);
     transition: background 0.3s ease, border-color 0.3s ease;
@@ -309,11 +306,10 @@ footer {
 footer p {
     font-size: 0.95rem;
     color: #FFFFFF;
-    opacity: 1;
 }
 
 /* ========================================
-   MODO OSCURO
+   MODO OSCURO - MANTIENE CONTRASTE
    ======================================== */
 body.dark-mode {
     background: #0F0A1A;
@@ -351,7 +347,7 @@ body.dark-mode .service-card {
 }
 
 body.dark-mode .service-card:hover {
-    border-color: var(--primary);
+    border-color: #7C3AED;
     box-shadow: 0 20px 60px rgba(124, 58, 237, 0.2);
 }
 
@@ -405,7 +401,7 @@ body.dark-mode .theme-toggle:hover {
         padding: 2rem;
         gap: 1.5rem;
         text-align: center;
-        border-bottom: 2px solid var(--secondary);
+        border-bottom: 2px solid #EC4899;
     }
 
     .nav-links.active {
