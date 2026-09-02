@@ -1,0 +1,467 @@
+/* ========================================
+   VARIABLES CSS - Paleta AuroraTech
+   ======================================== */
+:root {
+    --primary: #7C3AED;
+    --secondary: #EC4899;
+    --dark: #1E1B4B;
+    --light: #F8FAFC;
+    --text: #1F2937;
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* ========================================
+   RESET Y ESTILOS GENERALES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text);
+    background: var(--light);
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ========================================
+   HEADER Y NAVEGACIÓN
+   ======================================== */
+header {
+    background: rgba(30, 27, 75, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid rgba(124, 58, 237, 0.3);
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--secondary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--secondary);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* ========================================
+   BOTÓN MODO OSCURO
+   ======================================== */
+.theme-toggle {
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem 4rem;
+    background: linear-gradient(135deg, #1E1B4B 0%, #312E81 50%, #7C3AED 100%);
+    gap: 4rem;
+    transition: background 0.3s ease;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-content h1 span {
+    background: linear-gradient(135deg, var(--secondary), #F59E0B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    max-width: 500px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--secondary);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(236, 72, 153, 0.6);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.02);
+}
+
+/* ========================================
+   SECCIÓN SERVICIOS
+   ======================================== */
+.section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    color: var(--dark);
+    transition: color 0.3s ease;
+}
+
+.section-header h2 span {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-header p {
+    color: var(--text);
+    opacity: 0.8;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(124, 58, 237, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(124, 58, 237, 0.15);
+    border-color: var(--primary);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark);
+    transition: color 0.3s ease;
+}
+
+.service-card p {
+    color: var(--text);
+    opacity: 0.7;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+    text-align: center;
+    padding: 2.5rem;
+    background: var(--dark);
+    color: rgba(255, 255, 255, 0.7);
+    border-top: 2px solid rgba(124, 58, 237, 0.2);
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+footer p {
+    font-size: 0.95rem;
+}
+
+/* ========================================
+   MODO OSCURO
+   ======================================== */
+body.dark-mode {
+    background: #0F0A1A;
+    color: #E2E8F0;
+}
+
+body.dark-mode header {
+    background: rgba(15, 10, 26, 0.95);
+    border-bottom-color: rgba(124, 58, 237, 0.5);
+}
+
+body.dark-mode #hero {
+    background: linear-gradient(135deg, #0F0A1A 0%, #1A1035 50%, #2D1B69 100%);
+}
+
+body.dark-mode .btn-primary {
+    background: #8B5CF6;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+}
+
+body.dark-mode .btn-primary:hover {
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.6);
+}
+
+body.dark-mode .hero-content h1 span {
+    background: linear-gradient(135deg, #A78BFA, #F472B6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+body.dark-mode .service-card {
+    background: #1A1035;
+    border-color: rgba(124, 58, 237, 0.3);
+}
+
+body.dark-mode .service-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 20px 60px rgba(124, 58, 237, 0.2);
+}
+
+body.dark-mode .service-card h3 {
+    color: white;
+}
+
+body.dark-mode .service-card p {
+    color: #A0AEC0;
+}
+
+body.dark-mode .section-header h2 {
+    color: white;
+}
+
+body.dark-mode .section-header p {
+    color: #A0AEC0;
+}
+
+body.dark-mode footer {
+    background: #0F0A1A;
+    border-top-color: rgba(124, 58, 237, 0.2);
+}
+
+body.dark-mode .theme-toggle {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* ========================================
+   RESPONSIVE - TABLET Y MÓVIL
+   ======================================== */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(30, 27, 75, 0.98);
+        padding: 2rem;
+        gap: 1.5rem;
+        text-align: center;
+        border-bottom: 2px solid var(--secondary);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .theme-toggle {
+        margin-right: 0.5rem;
+        font-size: 1.2rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+        gap: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        margin: 0 auto 2rem;
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .btn-primary {
+        padding: 0.8rem 1.8rem;
+        font-size: 0.9rem;
+    }
+}
