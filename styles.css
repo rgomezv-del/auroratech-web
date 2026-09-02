@@ -59,7 +59,7 @@ nav {
     font-family: var(--font-heading);
     font-size: 1.8rem;
     font-weight: 700;
-    color: white;
+    color: #FFFFFF;
     letter-spacing: 2px;
 }
 
@@ -74,7 +74,7 @@ nav {
 }
 
 .nav-links a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
@@ -105,7 +105,7 @@ nav {
     display: none;
     background: none;
     border: none;
-    color: white;
+    color: #FFFFFF;
     font-size: 2rem;
     cursor: pointer;
     transition: transform 0.3s;
@@ -121,7 +121,7 @@ nav {
 .theme-toggle {
     background: none;
     border: 2px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    color: #FFFFFF;
     font-size: 1.5rem;
     padding: 0.3rem 0.8rem;
     border-radius: 50px;
@@ -152,7 +152,7 @@ nav {
 .hero-content {
     flex: 1;
     max-width: 600px;
-    color: white;
+    color: #FFFFFF;
 }
 
 .hero-content h1 {
@@ -161,6 +161,7 @@ nav {
     font-weight: 700;
     margin-bottom: 1.5rem;
     line-height: 1.2;
+    color: #FFFFFF;
 }
 
 .hero-content h1 span {
@@ -173,7 +174,8 @@ nav {
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
+    color: #FFFFFF;
+    opacity: 1;
     max-width: 500px;
 }
 
@@ -181,7 +183,7 @@ nav {
     display: inline-block;
     padding: 1rem 2.5rem;
     background: var(--secondary);
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
@@ -244,7 +246,7 @@ nav {
 
 .section-header p {
     color: var(--text);
-    opacity: 0.8;
+    opacity: 1;
     font-size: 1.1rem;
     margin-top: 0.5rem;
     transition: color 0.3s ease;
@@ -257,7 +259,7 @@ nav {
 }
 
 .service-card {
-    background: white;
+    background: #FFFFFF;
     padding: 2.5rem 2rem;
     border-radius: 20px;
     text-align: center;
@@ -286,11 +288,10 @@ nav {
 }
 
 .service-card p {
-    color: var(--text);
-    opacity: 0.9;    /* ← CAMBIADO DE 0.7 A 0.9 PARA MEJOR CONTRASTE */
+    color: #1F2937;
+    opacity: 1;
     font-size: 0.95rem;
     transition: color 0.3s ease;
-}
 }
 
 /* ========================================
@@ -300,15 +301,15 @@ footer {
     text-align: center;
     padding: 2.5rem;
     background: var(--dark);
-    footer p {
-    color: rgba(255, 255, 255, 0.9);  /* ← MEJOR CONTRASTE */
-}
+    color: #FFFFFF;
     border-top: 2px solid rgba(124, 58, 237, 0.2);
     transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 footer p {
     font-size: 0.95rem;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 /* ========================================
@@ -355,19 +356,19 @@ body.dark-mode .service-card:hover {
 }
 
 body.dark-mode .service-card h3 {
-    color: white;
+    color: #FFFFFF;
 }
 
 body.dark-mode .service-card p {
-    color: #A0AEC0;
+    color: #E2E8F0;
 }
 
 body.dark-mode .section-header h2 {
-    color: white;
+    color: #FFFFFF;
 }
 
 body.dark-mode .section-header p {
-    color: #A0AEC0;
+    color: #E2E8F0;
 }
 
 body.dark-mode footer {
