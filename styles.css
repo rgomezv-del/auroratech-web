@@ -136,7 +136,7 @@ nav {
 }
 
 /* ========================================
-   HERO SECTION - COLORES FUERTES
+   HERO SECTION
    ======================================== */
 #hero {
     min-height: 100vh;
@@ -216,7 +216,7 @@ nav {
 }
 
 /* ========================================
-   SECCIÓN SERVICIOS - CONTRASTE ALTO
+   SECCIÓN SERVICIOS
    ======================================== */
 .section {
     padding: 5rem 2rem;
@@ -250,6 +250,9 @@ nav {
     transition: color 0.3s ease;
 }
 
+/* ========================================
+   CSS GRID - GALERÍA DE SERVICIOS
+   ======================================== */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -292,7 +295,7 @@ nav {
 }
 
 /* ========================================
-   FOOTER - CONTRASTE ALTO
+   FOOTER
    ======================================== */
 footer {
     text-align: center;
@@ -309,7 +312,7 @@ footer p {
 }
 
 /* ========================================
-   MODO OSCURO - MANTIENE CONTRASTE
+   MODO OSCURO
    ======================================== */
 body.dark-mode {
     background: #0F0A1A;
@@ -383,12 +386,19 @@ body.dark-mode .theme-toggle:hover {
 /* ========================================
    RESPONSIVE - TABLET Y MÓVIL
    ======================================== */
-@media (max-width: 1024px) {
+
+/* TABLET (769px - 1024px): 2 columnas garantizadas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .hero-content h1 {
         font-size: 3rem;
     }
 }
 
+/* MÓVIL (hasta 768px): 1 columna + menú hamburguesa */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -451,6 +461,7 @@ body.dark-mode .theme-toggle:hover {
     }
 }
 
+/* MÓVIL PEQUEÑO (hasta 480px) */
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 2rem;
