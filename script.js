@@ -8,6 +8,7 @@ menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
+// Cerrar el menú al hacer clic en un enlace
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
@@ -15,16 +16,18 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // ========================================
-// MODO OSCURO / CLARO (BONUS)
+// MODO OSCURO / CLARO
 // ========================================
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
 
+// Verificar preferencia guardada al cargar la página
 if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
     themeToggle.textContent = '☀️';
 }
 
+// Cambiar tema al hacer clic
 themeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     
